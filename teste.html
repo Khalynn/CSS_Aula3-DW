@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Inspirado</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f9f9f9;
+            color: #111;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 24px 40px;
+            background-color: white;
+        }
+
+        .menu span {
+            margin: 0 15px;
+            cursor: pointer;
+            font-weight: bold;
+            text-transform: capitalize;
+        }
+
+        .menu i {
+            vertical-align: middle;
+            margin-left: 4px;
+        }
+
+        .botoes a {
+            margin-left: 12px;
+            padding: 10px 18px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .btn-primario {
+            background-color: #4d40d7;
+            color: white;
+            border: 2px solid #4d40d7;
+        }
+
+        .btn-secundario {
+            background-color: white;
+            color: #4d40d7;
+            border: 2px solid #4d40d7;
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 60px 40px;
+            background-color: white;
+        }
+
+        .texto {
+            max-width: 50%;
+            padding-right: 40px;
+        }
+
+        .texto h1 {
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+
+        .texto p {
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 30px;
+        }
+
+        .texto a {
+            background-color: #4d40d7;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 30px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .imagem {
+            max-width: 50%;
+        }
+
+        .imagem img {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 12px;
+        }
+
+        @media (max-width: 768px) {
+            main {
+                flex-direction: column-reverse;
+                text-align: center;
+            }
+
+            .texto, .imagem {
+                max-width: 100%;
+                padding: 0;
+            }
+
+            .texto {
+                margin-top: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <span>Plataforma <i class="material-icons">keyboard_arrow_down</i></span>
+            <span>Soluções <i class="material-icons">keyboard_arrow_down</i></span>
+            <span>Companhia <i class="material-icons">keyboard_arrow_down</i></span>
+            <span>Comunidade <i class="material-icons">keyboard_arrow_down</i></span>
+        </div>
+        <div class="botoes">
+            <a href="#" class="btn-primario">Exemplo</a>
+            <a href="#" class="btn-secundario">Entrar</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="texto">
+            <h1>Vamos conversar sobre os recursos da plataforma</h1>
+            <p>Capivara TXM conecta cada interação através de cada uma das quatro experiências chave ao longo do ciclo de vida do talento.</p>
+            <a href="#">Peça uma amostra</a>
+        </div>
+        <div class="imagem">
+            <img src="https://iema.es.gov.br/Media/iema/Not%C3%ADcias/Capivarinha%20-%20Thassiane%20Targino%20-%20Ipram%20(1).jpeg" alt="Capivara sorridente">
+        </div>
+    </main>
+</body>
+</html>
